@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "C:/Users/ray/projects/patentdownload/svn/Src/Java/patentdownload/webadmin/src/main/webapp/static/js/rayjs/score-product.js",
+        "sourceMap": false,
+        "types" : ["jquery"]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
