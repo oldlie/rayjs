@@ -19,18 +19,26 @@ export class ScoreProductApp extends App {
         idCtl.setVal('1');
 
         let nameCtl = new form.FormInputRowCTL('name', pid);
-        nameCtl.setText('名称:').setType('text');
+        nameCtl.setText('名称').setType('text');
 
         let priceCtl = new form.FormInputRowCTL('price', pid);
-        priceCtl.setText('需要的积分:').setType('number');
-        
-        let inventory = new form.FormInputRowCTL('inventory', pid);
-        
+        priceCtl.setText('需要的积分').setType('number');
+
+        let inventoryCtl = new form.FormInputRowCTL('inventory', pid);
+        inventoryCtl.setText('库存量').setType('number');
+
+        let countModalCtl = new form.FormModelRowCTL('count', pid);
+        countModalCtl
+            .setText('配置下载量')
+            .setStyle('btn-primary')
+            .setBtnText('配置');
 
         addForm
             .regControl(idCtl)
             .regControl(nameCtl)
-            .regControl(priceCtl);
+            .regControl(priceCtl)
+            .regControl(inventoryCtl)
+            .regControl(countModalCtl);
 
         let mainBox = new BoxCTL('box', null);
         mainBox

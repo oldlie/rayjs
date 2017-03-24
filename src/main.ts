@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import { Core } from './core';
 
 import { ScoreProductApp } from './apps/score/product';

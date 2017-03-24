@@ -3,6 +3,9 @@ import { Core } from '../core';
 export enum CTLStyle {
     horizontal, // 水平
     vertical, // 垂直
+    bigger,
+    normal,
+    smaller,
     primary
 }
 
@@ -24,4 +27,8 @@ export class CTL {
     getId(): string {
         return this.pid == null ? this.id : this.pid + '_' + this.id;
     }
+}
+
+export interface CTLHandle {
+    $bind(): void;
 }
