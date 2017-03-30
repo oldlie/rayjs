@@ -36,11 +36,11 @@ module.exports = {
         exclude: helpers.root('src', 'app'),
         loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
       },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw-loader'
-      }
+        {
+            test: /\.css$/,
+            include: helpers.root('src', 'app'),
+            loader: 'raw-loader'
+        }
     ]
   },
 
