@@ -1,4 +1,5 @@
 import {SideBarChildModel, SideBarItemModel} from "../models/sidebar-model";
+import {MainContentType} from "../models/main-content-types";
 /**
  * Created by ray on 2017/3/30.
  */
@@ -13,7 +14,7 @@ dashboard.text = "控制面板";
 const dashboardMain: SideBarChildModel = new SideBarChildModel();
 dashboardMain.id = "info";
 dashboardMain.text = "主要信息";
-dashboardMain.url = "/dashboard/index";
+dashboardMain.contentType = MainContentType.dashboardInfo;
 dashboard.children = new Array();
 dashboard.addChild(dashboardMain);
 MainSidebarData.push(dashboard);
@@ -28,17 +29,17 @@ user.addChild({
     id: "list",
     pid: user.id,
     text: "用户列表",
-    url: "/user/list"
+    contentType: MainContentType.userList
 }).addChild({
     id: "feedback",
     pid: user.id,
     text: "用户反馈",
-    url: "/user/feedback"
+    contentType: MainContentType.userFeedback
 }).addChild({
     id: "score",
     pid: user.id,
     text: "积分兑换",
-    url: "user/score"
+    contentType: MainContentType.userScore
 });
 
 MainSidebarData.push(user);

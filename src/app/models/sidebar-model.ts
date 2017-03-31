@@ -1,3 +1,4 @@
+import {MainContentType} from "./main-content-types";
 /**
  * Created by ray on 2017/3/30.
  */
@@ -6,7 +7,7 @@ export class SideBarChildModel {
     id: string;
     pid: string;
     text: string;
-    url: string;
+    contentType: MainContentType;
 }
 
 export class SmallLabelModel {

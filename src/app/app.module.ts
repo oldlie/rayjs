@@ -10,6 +10,7 @@ import { MainHeaderComponent } from './main-header.component'
 import { MainSidebarComponent } from './main-sidebar.component';
 import { MainFooterComponent } from './main-footer.component';
 import { MainContentComponent } from './main-content.component';
+import {MainContentNavigateService} from "./services/content-navigate.service";
 
 @NgModule({
   imports: [
@@ -21,8 +22,10 @@ import { MainContentComponent } from './main-content.component';
       MainSidebarComponent,
       MainFooterComponent,
       MainContentComponent,
-
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+    providers:[
+        MainContentNavigateService
+    ]
 })
 export class AppModule { }
