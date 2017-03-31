@@ -2,7 +2,7 @@
  * Created by ray on 2017/3/30.
  */
 import { OnInit,Component } from '@angular/core';
-import {WebVersionModel} from "./models/WebVersionModel";
+import {WebVersionModel} from "./models/web-version-model";
 
 @Component({
     selector: 'footer',
