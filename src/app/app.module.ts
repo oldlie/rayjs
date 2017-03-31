@@ -10,8 +10,6 @@ import { MainHeaderComponent } from './main-header.component'
 import { MainSidebarComponent } from './main-sidebar.component';
 import { MainFooterComponent } from './main-footer.component';
 import { MainContentComponent } from './main-content.component';
-import {WebVersionModel} from "./models/WebVersionModel";
-
 
 @NgModule({
   imports: [
